@@ -1,0 +1,23 @@
+.App{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2fc03b;
+
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 30px 0;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .heading{
+        margin: 15px 0;
+        font-size: 35px;
+    }
+}
