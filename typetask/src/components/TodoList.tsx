@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./styles.css"
 import { Todo } from '../model'
 import SingleTodo from './SingleTodo';
@@ -9,7 +9,9 @@ interface Props{
     completedTodos:Todo[];
     setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
-const TodoList:React.FC<Props> = ({todos,setTodos,completedTodos,setCompletedTodos}) => {
+const TodoList:React.FC<Props> = ({todos,setTodos,completedTodos,setCompletedTodos,}) => {
+
+  
   return (
     <div className="container">
       <div className="todos">

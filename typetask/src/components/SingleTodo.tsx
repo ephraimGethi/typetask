@@ -3,7 +3,7 @@ import { Todo } from '../model'
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { MdDone } from 'react-icons/md';
 import "./styles.css"
-import { Input } from 'reactstrap';
+
 
 
 
@@ -60,7 +60,7 @@ const SingleTodo:React.FC<Props> = ({todo,todos,setTodos,completedTodos,setCompl
       <div>
         <span className="icon" 
         onClick={()=>{
-          if(!edit&&!todo.isDone){
+          if(!todo.isDone){
             setEdit(!edit)
           }
         }}>
